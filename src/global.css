@@ -1,0 +1,182 @@
+:root {
+  --container-width: 127.4rem;
+  --font-primary: 'Muli', sans-serif;
+  --font-secondary: 'Mark Pro', sans-serif;
+  --font-third: 'Mulish', sans-serif;
+  --color-primary: #1c3136;
+  --color-accent: #2de298;
+}
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url('./assets/fonts/markpro/MarkPro-Bold.eot');
+  src: url('./assets/fonts/markpro/MarkPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/markpro/MarkPro-Bold.woff2') format('woff2'),
+      url('./assets/fonts/markpro/MarkPro-Bold.woff') format('woff'),
+      url('./assets/fonts/markpro/MarkPro-Bold.ttf') format('truetype'),
+      url('./assets/fonts/markpro/MarkPro-Bold.svg#MarkPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url('./assets/fonts/markpro/MarkPro-Heavy.eot');
+  src: url('./assets/fonts/markpro/MarkPro-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/markpro/MarkPro-Heavy.woff2') format('woff2'),
+      url('./assets/fonts/markpro/MarkPro-Heavy.woff') format('woff'),
+      url('./assets/fonts/markpro/MarkPro-Heavy.ttf') format('truetype'),
+      url('./assets/fonts/markpro/MarkPro-Heavy.svg#MarkPro-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary);
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.theme_btn-primary {
+  background-color: #2de298;
+  cursor: pointer;
+}
+
+.theme_btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  z-index: -1;
+  width: 0;
+  left: 0;
+  transition: 350ms;
+}
+
+.theme_btn:hover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  z-index: -1;
+  width: 100%;
+  left: 0;
+  transition: 350ms;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus{
+  outline: none;
+}
+
+.arrow-link a, a.arrow-link {
+  position: relative;
+  padding-right: 26px;
+  transition: 350ms;
+  line-height: 1;
+  border-bottom: #fff 1px solid;
+}
+
+.arrow-link a::before, a.arrow-link::before {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: inherit;
+  transform: translate(0,-60%) rotate(0);
+  color: inherit;
+}
+
+.arrow-link a::after, a.arrow-link::after {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  font-size: inherit;
+  transform: translate(0,-60%) rotate(0);
+  color: inherit;
+  transition: 150ms;
+}
+
+.arrow-link a:hover, a.arrow-link:hover {
+  border-color: #2de298;
+  color: #2de298;
+}
+
+.arrow-link a:hover::after, a.arrow-link:hover::after {
+  right: 0;
+  color: #2bda93;
+  transition: 150ms;
+}
+
+.arrow-link a:hover::before, a.arrow-link:hover::before {
+  display: none;
+}
+
+/* Responsive Start*/
+
+@media(min-width: 1400px){
+ .container{
+  max-width: 1273px;
+ } 
+}
+
+@media (max-width: 1919px) {
+  .container {
+    max-width: 1141px;
+  }
+}
+
+/* Responsive End */

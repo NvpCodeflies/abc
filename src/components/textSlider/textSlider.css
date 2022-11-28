@@ -1,0 +1,75 @@
+.text-slider_section {
+  position: relative;
+}
+
+.text-slider_wrapper {
+  padding: 90px 0;
+}
+
+.text-slider_item p {
+  font-size: 20px;
+  font-family: var(--font-secondary);
+  max-width: 650px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+.text-slider_item a {
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-primary);
+  text-decoration: underline;
+  display: block;
+  font-weight: 500;
+}
+
+.text-slider_item a:hover {
+  text-decoration: underline;
+}
+
+.text-slider_section .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.text-slider_section .slick-dots li button:before {
+  font-size: 16px;
+  opacity: 0.15;
+}
+
+.text-slider_section .slick-dots li.slick-active button:before,
+.text-slider_section .slick-dots li button:hover:before {
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+.text-slider_section .slick-arrow::before {
+  display: none;
+}
+
+.text-slider_section .slick-arrow svg {
+  fill: var(--color-primary);
+  width: 60px;
+  height: 60px;
+  fill: var(--color-accent);
+}
+
+.text-slider_section .slick-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 60px;
+  height: 60px;
+}
+
+.text-slider_section .slick-arrow.slick-next {
+  right: 50px !important;
+  left: auto;
+}
+
+.text-slider_section .slick-arrow.slick-prev {
+  left: 50px;
+}

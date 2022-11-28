@@ -1,0 +1,65 @@
+.vulnerbility-item_row {
+    display: flex;
+    align-items: center;
+}
+
+.vulnerbility-item_img {
+    width: 122px;
+    height: 122px;
+    display: block;
+    margin-right: 40px;
+}
+
+.vulnerbillity-item_content{
+    margin-right: auto;
+}
+
+.vulnerbillity-item_content h2 {
+    font-size: 48px;
+    margin-bottom: 4px;
+    line-height: 55.2px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    font-family: var(--font-secondary);
+}
+
+.vulnerbillity-item_content h4 {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    font-family: var(--font-secondary);
+}
+
+.vulnerbility_suggest {
+    display: flex;
+    align-items: center;
+}
+
+.vulnerbility_suggest img {
+    width: 33px;
+    height: 33px;
+    margin-right: 12px;
+}
+
+.vulnerbility-item_section {
+    padding-top: 69px;
+}
+
+.vulnerbility-item_row{
+    margin-bottom: 48px;
+}
+
+.vulnerbility_item-tags {
+    display: flex;
+}
+
+.vulnerbility_item-tags li {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    font-weight: 300;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+}
+

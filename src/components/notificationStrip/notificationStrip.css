@@ -1,0 +1,116 @@
+.header_notification {
+  background: #2de298;
+  padding: 8px 0;
+  position: relative;
+}
+
+.header_notification-slider-item p {
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 300;
+  letter-spacing: -0.36px;
+}
+
+.header_notification-slider-item p b {
+  font-family: 'Mark pro', sans-serif;
+  font-size: 16px;
+}
+
+.header_notification-slider-item p b {
+  letter-spacing: -0.36px;
+  font-family: 'Mark Pro', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.67px;
+}
+
+.header_notification-slider .slick-arrow {
+  width: 24px;
+  border-radius: 50px;
+  height: 24px;
+  display: flex;
+  box-shadow: 12px 12px 20px 0px #d5dee780;
+  padding: 0;
+  font-size: 14px;
+  align-items: center;
+}
+
+.header_notification-slider .slick-arrow:focus,
+.header_notification-slider .slick-arrow:hover {
+  color: #1c3136;
+  background-color: #2bda93;
+}
+
+.header_notification-slider .slick-arrow::before {
+  display: none;
+}
+
+.close-slider {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 51px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header_notification .header_container {
+  position: relative;
+}
+
+.header_notification .slick-prev {
+  left: 0;
+}
+
+.header_notification .slick-next {
+  right: 0;
+}
+
+.header_notification-slider-item p a {
+  color: inherit;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+
+.header_notification-slider-item strong {
+  margin-right: 8px;
+}
+
+.header_notification-slider .slick-arrow svg {
+  fill: var(--color-primary);
+}
+
+.header_notification-slider .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Start  */
+
+@media (max-width: 1199px) {
+  .header_notification-slider {
+    max-width: calc(100% - 100px);
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_notification-slider {
+    max-width: calc(100% - 30px);
+    padding: 0 30px;
+  }
+
+  .close-slider {
+    right: 16px;
+  }
+}
+
+/* Responsive End */

@@ -1,0 +1,134 @@
+.search_section {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    padding: 285px 28px 231px 28px;
+    background-image: url('/src/assets/img/search-bg.png');
+    background-position: calc(50% + 6px) 35%;
+    background-repeat: no-repeat;
+    background-size: 640px;
+}
+
+.search_wrapper {
+    max-width: 811px;
+    width: 100%;
+}
+
+.search_title {
+    font-size: 80px;
+    color: #fff;
+    font-weight: 800;
+    font-family: var(--font-secondary);
+    line-height: 84px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+p.search_subtitle {
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -.02em;
+    line-height: 25px;
+    margin-top: 4px;
+    margin-bottom: 38px;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    height: 67px;
+    border-radius: 5px;
+    background: #fff;
+    padding-left: 33px;
+}
+
+.search_bar input {
+    align-self: stretch;
+    padding: 14px;
+    border: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--font-third);
+    font-weight: 300;
+    color: rgba(28, 49, 54);
+    flex-grow: 1;
+}
+
+.search_bar input::placeholder{
+    color: rgba(28, 49, 54, 0.5);
+    font-family: var(--font-third);
+    font-weight: 300;
+}
+
+.search_btn {
+    align-self: stretch;
+    padding: 28px 49.5px;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+}
+
+.search_btn svg{
+    display: none;
+}
+
+@media(max-width:767px){
+
+    .search_title{
+        font-size: 48px;
+        line-height: 55px;
+        letter-spacing: -0.02em;
+    }
+
+    p.search_subtitle {
+        font-size: 16px;
+        padding: 0 30px;
+        letter-spacing: 0.02em;
+    }
+
+    .search_section {
+        padding: 79px 32px 66px ;
+        background-position: calc(50% + 6px) 5%;
+        background-size: 80%;
+    }
+
+    .search_bar svg{
+        display: none;
+    }
+
+    .search_btn svg{
+        display: block;
+    }
+
+
+    .search_bar{
+        height: 45px;
+        padding: 0;
+        
+    }
+
+    .search_bar input{
+        padding: 12px 14px;
+        border-radius: 3px;
+    }
+
+    .search_btn {
+        font-size: 0;
+        width: 50px;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        border-radius: 2px;
+        justify-content: center;
+    }
+
+    p.blog_read-more {
+        margin-top: 68px;
+        padding: 0 41px;
+    }
+}

@@ -1,0 +1,43 @@
+.vulnerbilities-trend_wrapper {
+  padding: 16px 32px;
+}
+
+.vulnerbility-trending_image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+
+.vulnerbility-trending_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.vulnerbility-trend_item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.vulnerbility_trend_content h3 {
+  font-size: 16px;
+  font-family: var(--font-secondary);
+}
+
+.vulnerbility_trend_content p {
+  font-size: 12px;
+  line-height: 1.2;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.moreLink {
+  text-align: right;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+}

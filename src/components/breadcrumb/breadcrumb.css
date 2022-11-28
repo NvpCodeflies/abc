@@ -1,0 +1,37 @@
+.breadcrumb li a,
+.breadcrumb li p{
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.03em;
+    color: rgba(28, 49, 54, 0.5);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    display: inline-block;
+    
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.breadcrumb li::after{
+    content:">";
+    margin-right: 6px;
+    margin-left: 6px;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    color: rgba(28, 49, 54, 0.5);
+}
+
+.breadcrumb li:last-child::after{
+    display: none;
+}
+
+
+.breadcrumb_section{
+    padding: 19px 0;
+}
